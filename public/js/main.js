@@ -17,7 +17,7 @@ async function generateImage(prompt, request){
     try {
         showSpinner();
         const response = await fetch('/openai/generateimage', {
-            method: 'POSt',
+            method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
