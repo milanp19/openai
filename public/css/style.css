@@ -8,9 +8,8 @@
   padding: 0;
 }
 
-:root {
-  --primary-color: #f9b64d;
-}
+
+
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -22,27 +21,32 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #333;
+  background: rgb(36, 35, 34);
   color: #fff;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
+  right: 10px;
 }
 
 .navbar ul li {
   margin-left: 1rem;
 }
 
-.navbar a {
-  color: #fff;
+.docs{
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+}
+
+.docs a {
+  color: rgb(70, 22, 183);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .navbar a:hover {
@@ -51,15 +55,23 @@ body {
 
 /* Showcase */
 .showcase {
-  height: 450px;
-  width: 100%;
-  background: var(--primary-color);
+  height: 600px;
+  width: fit-content;
+  padding: 64px;
+  margin: 2rem 2rem;
+  background: rgba( 249, 182, 77, 0.65 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .showcase h1 {
   font-size: 2.5rem;
   color: #333;
   text-align: center;
+  margin-bottom: 32px;
   padding: 1rem 0;
 }
 
@@ -83,6 +95,7 @@ form select {
   margin-bottom: 1rem;
 }
 
+
 form button {
   font-size: 20px;
   padding: 1rem 2rem;
@@ -91,7 +104,7 @@ form button {
   background: #333;
   color: #fff;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 form button:hover {
@@ -101,17 +114,36 @@ form button:hover {
 /* Image */
 
 .image {
-  width: 100%;
-  margin-top: 2rem;
+  width: 60vw;
+  height: 85vh;
+  min-width: 1072px;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  text-align: center;
+  background: rgba(155, 155, 155, 0.5);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-img {
-  display: block;
-  margin: auto;
+.image-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+
+
 
 .msg {
   font-size: 1.6rem;
   text-align: center;
   margin-top: 1rem;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
 }
