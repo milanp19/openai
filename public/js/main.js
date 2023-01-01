@@ -49,6 +49,4 @@ function showSpinner(){
 function removeSpinner(){
     document.querySelector('.spinner').classList.remove('show');
 }
-
-
 document.querySelector('#image-form').addEventListener('submit', onSubmit);
