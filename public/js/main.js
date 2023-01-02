@@ -27,10 +27,10 @@ async function generateImage(prompt, size){
             })
         })
 
-        if(!response.ok){
-            removeSpinner();
-            throw new Error('That image could not be generated');
-        }
+        // if(!response.ok){
+        //     removeSpinner();
+        //     throw new Error('That image could not be generated');
+        // }
 
         const data = await response.json();
         // console.log(data);
