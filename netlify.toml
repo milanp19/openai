@@ -1,4 +1,4 @@
 [build]
-  command = "npm run build"
+  command = "npm run dev"
   publish = ""
   environment = { OPENAI_KEY = "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" }
