@@ -1,4 +1,4 @@
 [build]
-  command = "cp .env && npm run build"
+  command = "cp ./.env && npm run build"
   publish = ""
   environment = { OPENAI_KEY = "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" }
