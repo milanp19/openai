@@ -31,7 +31,6 @@ body {
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  font-size: 3vw;
 }
 
 .navbar ul {
@@ -40,7 +39,8 @@ body {
 }
 
 
-.navbar a {
+.navbar a, .navbar h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
   color: #fff;
   text-decoration: none;
   /* font-size: vw; */
@@ -54,14 +54,14 @@ body {
 .showcase {
   margin-top: 50px;
   border-radius: 24px;
-  height: 50vh;
+  height: 60vh;
   font-size: 12px;
-  width: 70vw;
+  width: 80vw;
   background: var(--primary-color);
 }
 
 .showcase h1 {
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 3vw, 5rem);
   color: #cacaca;
   text-align: center;
   padding: 1rem 0;
@@ -78,8 +78,8 @@ body {
 
 .showcase form input,
 form select {
-  font-size: 3vw;
-  width: 60vw;
+  font-size: clamp(1rem, .5vw, 4rem);
+  width: clamp(15rem, 40vw, 50rem);
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
