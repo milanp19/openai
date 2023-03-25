@@ -51,6 +51,7 @@ body {
 
 /* Showcase */
 .showcase {
+  margin-top: 50px;
   border-radius: 24px;
   height: 50vh;
   font-size: 12px;
