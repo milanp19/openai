@@ -16,16 +16,16 @@ function onSubmit(e){
 async function generateImage(prompt, size){
     try {
         showSpinner();
-        const response = await fetch('/openai/generateimage', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify({
-                prompt,
-                size
-            })
-        })
+        const response = await fetch("/openai/generateimage", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            prompt,
+            size,
+          }),
+        });
 
         console.log(response)
 
