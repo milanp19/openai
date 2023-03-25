@@ -37,7 +37,7 @@ async function generateImage(prompt, size){
       const data = await response.json();
       // console.log(data);
       const imageUrl = data.data;
-      document.querySelector("img").style.display = "block";
+      document.querySelector(".image").style.display = "block";
       document.querySelector("#image").src = imageUrl;
       removeSpinner();
     } catch (error) {

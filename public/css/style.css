@@ -54,12 +54,12 @@ body {
   border-radius: 24px;
   height: 50vh;
   font-size: 12px;
-  min-width: 40vh;
+  width: 70vw;
   background: var(--primary-color);
 }
 
 .showcase h1 {
-  font-size: 2em;
+  font-size: 3vw;
   color: #cacaca;
   text-align: center;
   padding: 1rem 0;
@@ -76,8 +76,8 @@ body {
 
 .showcase form input,
 form select {
-  font-size: 2em;
-  width: 12em;
+  font-size: 2vw;
+  width: 60vw;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -104,8 +104,7 @@ form button:hover {
 .image {
   min-width: 50vw;
   height: 80vh;
-  border: 1px solid rgb(100, 53, 100);
-  /* display: none; */
+  display: none;
 }
 
 .image-container{
@@ -118,7 +117,7 @@ form button:hover {
 }
 
 img {
-  display: none;
+  display: block;
   margin: auto;
 }
 
