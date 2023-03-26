@@ -57,7 +57,7 @@ body {
   height: 60vh;
   font-size: 12px;
   width: 80vw;
-  background: var(--primary-color);
+  background: black;
 }
 
 .showcase h1 {
